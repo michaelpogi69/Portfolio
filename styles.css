@@ -1,178 +1,73 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body and Base Styling */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f6f9;
-    color: #333;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
 }
-
-/* Header: Profile Card */
-header {
-    background-color: #2c3e50;
-    padding: 40px 0;
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+.header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #ff3f34 3px solid;
+}
+.header .profile-card {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
 }
-
-header .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 1200px;
-    width: 100%;
-    padding: 0 20px;
-    border-radius: 10px;
-    background-color: #ffffff;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+.header .profile-info {
+    margin-left: 20px;
 }
-
-/* Profile Image Box */
-.profile-image-box {
-    width: 140px;
-    height: 140px;
-    border: 4px solid #3498db; /* Blue border */
-    padding: 10px;
-    margin-right: 30px;
-    background-color: #fff;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-}
-
-.profile-image-box img {
-    width: 100%;
-    height: 100%;
+.header .profile-img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
     object-fit: cover;
-    border-radius: 8px;
 }
-
-/* Profile Info Styling */
-.profile-info {
-    text-align: left;
+.header h1 {
+    margin: 0;
+    padding-bottom: 10px;
 }
-
-.profile-info h1 {
-    font-size: 2.5rem;
-    color: #2c3e50;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
+.header .title {
+    font-weight: 300;
+    font-size: 1.2em;
 }
-
-.profile-info .contact-info {
-    font-size: 1.2rem;
-    margin-top: 5px;
-}
-
-.profile-info a {
-    color: #3498db;
+.header .contact-info a {
+    color: #ff3f34;
     text-decoration: none;
-    transition: color 0.3s ease;
 }
-
-.profile-info a:hover {
-    color: #e67e22;
+main {
+    padding: 20px 0;
 }
-
-/* Section Cards */
 .section-card {
-    background-color: #ffffff;
-    padding: 30px 20px;
-    margin: 20px 0;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-
 .section-card h2 {
-    font-size: 2rem;
-    color: #2980b9;
-    border-bottom: 3px solid #2980b9;
-    padding-bottom: 5px;
+    color: #333;
     margin-bottom: 20px;
 }
-
-.section-card p,
-.section-card ul {
-    font-size: 1.1rem;
+.education-entry,
+.skill-list {
+    margin-bottom: 10px;
+}
+.education-entry h3 {
+    font-size: 1.1em;
     color: #555;
 }
-
-ul {
-    list-style: none;
-}
-
-ul li {
-    padding-left: 20px;
-    position: relative;
-}
-
-ul li::before {
-    content: '✔️';
-    position: absolute;
-    left: 0;
-    color: #2980b9;
-}
-
-/* Education Entries */
-.education-entry h3 {
-    font-size: 1.4rem;
-    color: #2980b9;
-    margin-bottom: 5px;
-}
-
-.education-entry em {
-    font-style: normal;
-    color: #888;
-}
-
-/* Footer Styling */
 footer {
-    background-color: #2c3e50;
+    background: #333;
     color: #fff;
     text-align: center;
-    padding: 20px 0;
-    font-size: 1rem;
-}
-
-footer .container {
-    max-width: 1200px;
-    width: 100%;
-}
-
-/* Responsive Design for Smaller Screens */
-@media (max-width: 768px) {
-    .container {
-        width: 90%;
-    }
-
-    header h1 {
-        font-size: 2.2rem;
-    }
-
-    header .contact-info {
-        font-size: 1rem;
-    }
-
-    h2 {
-        font-size: 1.8rem;
-    }
-
-    .profile-image-box {
-        width: 120px;
-        height: 120px;
-    }
-
-    #skills li {
-        font-size: 1rem;
-    }
+    padding: 10px 0;
+    border-top: #ff3f34 3px solid;
 }
